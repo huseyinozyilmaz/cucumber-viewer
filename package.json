@@ -1,0 +1,29 @@
+{
+  "name": "cucumber-viewer",
+  "version": "0.0.1",
+  "description": "An advanced Cucumber feature viewer: navigate and search feature files and scenarios",
+  "main": "app.js",
+  "author": "Huseyin Ozyilmaz",
+  "license": "Apache-2.0",
+  "keywords": [
+    "feature",
+    "scenario",
+    "gherkin",
+    "BDD",
+    "cucumber"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/huseyinozyilmaz/cucumber-viewer.git"
+  },
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "bootstrap": "^3.3.6",
+    "express": "^4.14.0",
+    "gherkin": "^4.0.0",
+    "jquery": "^3.0.0"
+  }
+}

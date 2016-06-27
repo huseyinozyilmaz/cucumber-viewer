@@ -1,0 +1,12 @@
+{
+    "apps": [
+        {
+            "name": "Calculator",
+            "id": "calc",
+            "path": "/Users/huseyin/repo/data/cucumber-viewer/features",
+            "description": "Test Project"
+            "url" : ""
+        }
+    ]
+
+}
