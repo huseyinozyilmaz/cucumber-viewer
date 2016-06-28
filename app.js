@@ -2,7 +2,6 @@ var express    = require('express');
 var bodyParser = require('body-parser');
 var gherkin    = require('gherkin');
 var util       = require('util');
-var config     = require('./config.json');
 var api        = require('./routes/api');
 
 var PORT = process.env.PORT || 4000;
@@ -19,7 +18,6 @@ var parser = new gherkin.Parser();
 //var gherkinDocument = parser.parse("Feature: ...");
 //var pickles = new gherkin.Compiler().compile(gherkinDocument, "path/to/the.feature");
 
-console.log(config.apps[0].name);
 
 app.get('/', function (req, res) {
     
