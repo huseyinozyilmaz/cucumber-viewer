@@ -1,6 +1,11 @@
 var express = require('express');
 var gherkin = require('gherkin');
+var util    = require('util');
+var config  = require('./config.json');
 
+var PORT = process.env.PORT || 4000;
+
+// View Engine Setup
 var app = express();
 app.use(express.static('public'));
 app.use('/vendor',  express.static(__dirname + '/node_modules'));
@@ -17,6 +22,6 @@ app.get('/', function (req, res) {
 
 
 
-app.listen(4000, function () {
-    console.log('Example app listening on port 4000!');
+app.listen(PORT, function () {
+    console.log(util.format('Example app listening on port %d!', PORT));
 });
