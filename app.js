@@ -1,6 +1,5 @@
 var express    = require('express');
 var bodyParser = require('body-parser');
-var gherkin    = require('gherkin');
 var util       = require('util');
 var api        = require('./routes/api');
 
@@ -12,11 +11,6 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static('public'));
 app.use('/vendor',  express.static(__dirname + '/node_modules'));
-
-
-var parser = new gherkin.Parser();
-//var gherkinDocument = parser.parse("Feature: ...");
-//var pickles = new gherkin.Compiler().compile(gherkinDocument, "path/to/the.feature");
 
 
 app.get('/', function (req, res) {
